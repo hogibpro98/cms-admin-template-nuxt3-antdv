@@ -1,0 +1,46 @@
+[class*='-dark'] {
+  background: #ffffff !important;
+}
+
+.ant-menu-dark {
+  color: black;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+
+  //.ant-menu-item-selected {
+  //  background: $pig-pink !important;
+  //  color: $gondola !important;
+  //}
+}
+
+.ant-menu-inline.ant-menu-root, .ant-menu-vertical.ant-menu-root {
+  box-shadow: none;
+  width: 88%;
+  margin-left: 6%;
+}
+
+li.ant-menu-item {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+span.ant-menu-title-content {
+  display: flex;
+  align-items: center;
+}
+
+span.ant-menu-title-content img {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  span.ant-menu-title-content img {
+    margin-top: 10px;
+  }
+  span.nav-text {
+    display: none;
+  }
+}

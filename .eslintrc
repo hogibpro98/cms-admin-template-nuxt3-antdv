@@ -1,0 +1,37 @@
+{
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "extends": [
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:nuxt/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "parser": "@typescript-eslint/parser"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-console": 0,
+    "camelcase": 0,
+    "no-explicit-any": 0,
+    "vue/multi-word-component-names": 0,
+    "vue/singleline-html-element-content-newline": 0,
+    "vue/require-default-prop": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 120, // Depending on the screen size provided by the company
+        "tabWidth": 2, // Tabs are recommended to be 2 spaces wide
+        "singleQuote": true, // Double quotes were common in the past, but now single quotes are preferred
+        "semi": true, // Depends on personal or team preference; in the past, JavaScript always required semicolons at the end
+        "trailingComma": "none", // Trailing comma preference
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}

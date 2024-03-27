@@ -1,0 +1,249 @@
+$vista-white: #FFF7F9;
+$pink-lace: #FFD7F4;
+$spicy-mix: #815344;
+$boulder: #80747B;
+$rangoon-green: #1F1A1D;
+$mardi-gras: #380037;
+$pig-pink: #F8DAEE;
+$peach-schnapps: #FFDAD6;
+$milk-white: #FFFBFF;
+$light-grey: #d9d9d9;
+$gondola: #271624;
+$amour: #F5EBEF;
+$white: #FFFFFF;
+$light-eggplant: #8B4483;
+div#__nuxt {
+  height: 100vh;
+  background: $milk-white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.layout {
+  display: flex;
+  overflow: hidden;
+  .ant-layout {
+    overflow: hidden;
+  }
+
+  .layout-content {
+    flex: none;
+  }
+}
+
+.ant-card .ant-card-body {
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+}
+
+.ant-layout.ant-layout-has-sider > .ant-layout, .ant-layout.ant-layout-has-sider > .ant-layout-content {
+  border-left: 1px solid $light-grey;
+}
+
+.ant-layout .ant-layout-sider, .ant-layout.ant-layout-has-sider {
+  height: auto;
+  background: $milk-white !important;
+}
+
+//#tool-bar-table {
+//  display: flex;
+//  align-items: center;
+//  justify-content: space-between;
+//  padding-bottom: 10px;
+//  .ant-select-dropdown {
+//    text-align: center;
+//  }
+//}
+//
+//.ant-select-open {
+//  border-color: $rangoon-green;
+//}
+
+.ant-table-wrapper .ant-table-container {
+  background: $milk-white;
+  height: 70vh;
+}
+
+.ant-table-body {
+  height: 62.6vh;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-placeholder {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.25);
+  background: $milk-white;
+  height: 62.6vh;
+  td.ant-table-cell {
+    background: no-repeat !important;
+  }
+  :hover {
+    background: $milk-white;
+  }
+}
+
+.ant-table-wrapper .ant-table:not(.ant-table-bordered) .ant-table-tbody > tr > td,
+.ant-table-wrapper .ant-table:not(.ant-table-bordered) .ant-table-tbody > tr.ant-table-measure-row + tr > td {
+  background: $white;
+}
+
+li.ant-pagination-item {
+  display: none;
+}
+
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-title-content, .ant-dropdown-menu-submenu .ant-dropdown-menu .ant-dropdown-menu-title-content {
+  img {
+    margin-right: 10px;
+  }
+  width: 220px;
+  display: flex;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.ant-modal-body {
+  .ant-btn-primary {
+    background: $pink-lace;
+    border-color:  $pink-lace;
+    color: $rangoon-green;
+    &:not(:disabled):hover {
+      color: $rangoon-green;
+      background-color: $pink-lace;
+    }
+  }
+}
+
+.ant-popover-content {
+  max-width: 500px;
+}
+
+//#setting-from {
+//  .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+//    color: black;
+//    background: #FBF1F5;
+//    width: 100%;
+//    height: 32px;
+//    padding: 0 0 0 20px;
+//    border: 1px solid #FBF1F5;
+//  }
+//}
+//
+//.text-error {
+//  color: red;
+//  font-size: 11px;
+//  position: absolute;
+//  left: 22%;
+//  top: 86%;
+//  transform: translate(-50%, -10%);
+//  transition: 0.6s;
+//}
+//
+//.content-error {
+//  margin-bottom: 15px;
+//  max-width: 350px;
+//  word-break: break-word;
+//}
+//
+//#layout-slot {
+//  background: #fffbff;
+//}
+//#layout-slot-content {
+//  margin: 10px 20px 0;
+//}
+
+.menu-container {
+  overflow: auto;
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  &.is-side-menu {
+    height: calc(100vh - 20vh);
+  }
+}
+
+//.ant-form-item-with-help .ant-form-item-explain {
+//  height: 22px;
+//  z-index: 1000;
+//  overflow: hidden;
+//}
+//
+//span.submit-text {
+//  font-size: 12px;
+//  font-weight: 600;
+//  margin-right: 5px;
+//  cursor: pointer;
+//  margin-left: 5px;
+//}
+
+.display-none {
+  display: none !important;
+}
+
+#logo-spite {
+  margin: 16px 0 23px 24px;
+  width: 252px;
+  img {
+    width: 252px;
+  }
+}
+
+//@media only screen and (max-width: 1540px) {
+//  $container-height: 64vh;
+//  $placeholder-height: 55vh;
+//  .ant-table-wrapper .ant-table-container {
+//    height: $container-height;
+//    overflow-x: hidden;
+//    overflow-y: hidden;
+//  }
+//  .ant-table-body {
+//    height: 88%;
+//  }
+//  .ant-table-wrapper .ant-table-tbody > tr.ant-table-placeholder {
+//    height: $placeholder-height;
+//  }
+//
+//  .menu-container {
+//    &.is-side-menu {
+//      height: calc(100vh - 25vh);
+//    }
+//  }
+//  span.submit-text {
+//    margin-right: 0;
+//    margin-left: 0;
+//  }
+//  .ant-divider-vertical {
+//    margin: 0 10px;
+//  }
+//}
+//
+//@media only screen and (max-width: 1280px) {
+//  $container-height: 52vh;
+//  $placeholder-height: 38vh;
+//  .ant-table-wrapper .ant-table-container {
+//    height: $container-height;
+//  }
+//  .ant-table-body {
+//    height: 75%;
+//  }
+//  .ant-table-wrapper .ant-table-tbody > tr.ant-table-placeholder {
+//    height: $placeholder-height;
+//  }
+//
+//  .menu-container {
+//    &.is-side-menu {
+//      height: calc(100vh - 30vh);
+//    }
+//  }
+//  .ant-divider-vertical {
+//    margin: 0 12px;
+//  }
+//}

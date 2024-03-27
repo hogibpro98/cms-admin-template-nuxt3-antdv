@@ -1,0 +1,1 @@
+export const EMPLOYEE_ID = '従業員ID'
